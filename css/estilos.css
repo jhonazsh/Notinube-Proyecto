@@ -1,0 +1,285 @@
+		
+
+		.columna-des4{
+
+			
+			
+			overflow-y: auto; 
+		}
+
+		.columna-des5{
+			
+			overflow-y: auto;
+		}
+
+		.cabecera{
+			background-color: rgb(91, 107, 86);
+			
+		}
+
+		.contenido-cabecera{
+			background-color: rgb(143, 194, 141);
+			border-bottom: 1px solid rgba(129, 141, 122, 0.88);
+			overflow: hidden;
+			height: 47px;
+		}
+
+		.contenido{
+			
+			border-right: 1px solid rgba(129, 141, 122, 0.26);
+		}
+
+		.contenido-total{
+			padding: 0;
+		}
+
+		
+		.post-cab{
+			padding: 0;
+		}
+
+		.post-cab img{
+			width: 100%;
+		}
+
+		.post-cont{
+			padding: 0;
+		}
+		.post-cont-cab{
+			background-color: rgb(200, 250, 177);
+			font-weight: bold;
+			color: rgb(114, 114, 102);
+		}
+
+		.post-cont-noti{
+			border-right: 1px solid rgb(200, 250, 177);
+			border-bottom: 1px solid rgb(200, 250, 177);
+			
+		}
+
+		.cont-noti{
+			height: 120px;
+			color: rgb(153, 140, 140);
+			text-align: justify;
+		}
+
+		.cont-botones{
+			
+			height: 30px;
+			
+			background-color: rgb(238, 253, 207);
+		}
+		
+		.cont-botones button{
+			background-color: white;
+			border: 1px solid rgb(218, 218, 218);
+			padding-left: 20px;
+			padding-right: 20px;
+			color: rgb(179, 165, 165);
+		}
+
+		.cont-botones button:hover{
+			border: 1px solid rgb(158, 151, 151);
+			color: rgb(124, 115, 115);
+			cursor: pointer;
+		}
+
+		.nav li{
+			list-style: none;
+			float: left;
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			background-color: rgb(180, 168, 146);
+			color: white;
+			border-bottom: 5px solid rgb(158, 146, 126);
+		}
+
+		.nav li:hover{
+			background-color: rgb(73, 68, 69);
+			cursor: pointer;
+		}
+
+		.nav ul{
+			padding: 0;
+			margin: 0;
+		}
+
+
+
+		.columna-des12 h2{
+			color: white;
+			margin: 0;
+		}
+
+		.mostrar-img img{
+			width: 100%;
+		}
+
+		.pie-pagina{
+			background-color: rgb(143, 194, 141);
+			padding: 0;
+			overflow: hidden;
+			border-top: 1px solid rgba(129, 141, 122, 0.88);
+		}
+
+		.nav-footer li{
+			padding-top: 6px;
+			padding-bottom: 6px;
+			float: left;
+			background-color: rgb(116, 129, 117);
+			border: none;
+		}
+
+		.mostrar-cont-noti{
+			text-align: justify;
+			color: rgb(97, 89, 89);
+		}
+
+		.titu-supremo{
+			margin-top: 0;
+			margin-bottom: 10px;
+			background-color: rgb(213, 238, 169);
+			color: rgb(107, 100, 100);
+			text-align: center;
+			border-bottom: 3px solid rgb(188, 209, 150);
+		}
+
+		
+
+		.fech{
+			color: rgb(150, 152, 153);
+			float: right;
+			margin-top: 3px;
+			margin-right: 2px;
+			font-size: 14px;
+		}
+
+		b{
+			font-size: 28px;
+		}
+
+		.sub-lugar{
+			background-color: rgb(248, 64, 72);
+			position: relative;
+			top: -30px;
+			padding-right: 1em;
+			padding-left: 1em;
+			width: 50%;
+			text-align: center;
+			color: 	white;
+			border-right: 3px solid rgb(255, 145, 150);
+		}
+
+		.bloque-sub-noti{
+			display: inline-block;
+		}
+
+		.noti-user img{
+			width: 30px;
+			height: 30px;
+		}
+
+		.noti-user{
+			float: right;
+		}
+
+		.publicar-redes{
+			margin-top: 11px;
+		}
+
+		.icon-googleplus, .icon-facebook, .icon-twitter{
+			font-size: 20px;
+		}
+
+		.icon-googleplus{
+			color: rgb(236, 60, 60);
+		}
+
+		.icon-facebook{
+			color: rgb(99, 99, 189);
+		}
+
+		.icon-twitter{
+			color: rgb(28, 183, 247);
+		}
+
+		.icon-menu{
+			float: right;
+		}
+
+		.info{
+			position: fixed;
+		}
+
+
+
+		/*.---------------.*/
+
+		.grupo-form{
+			padding: 0.5em 0.7em;
+			overflow: hidden;
+			width: 100%;
+			box-sizing: border-box;
+		}
+
+		.labeled{
+			padding: 1em 1em 0em 0em;
+			width: 18%;
+			color: rgba(0, 0, 0, 0.54);
+			box-sizing: border-box;
+		}
+
+		.labeled, #contenido, #titulo, .cont-comentario{
+			float: left;
+		}
+
+		#contenido{
+			border-radius: 2px;
+			border: 1px solid rgb(231, 195, 195);
+			width: 82%;
+			box-sizing: border-box;
+		}
+
+		#registrar{
+			background-color: rgb(26, 253, 135);
+			border: 1px solid rgb(255, 255, 255);
+			height: 30px;
+			color: white;
+			padding: 0em 2em;
+			border-radius: 2px;
+			float: right;
+			margin-left: 8px;
+		}
+
+		#titulo, #autor{
+			width: 262px;
+		}
+
+		#coment-text, #com{
+			background-color: rgb(238, 253, 207);
+		}
+
+		#com{
+			border-bottom: 1px solid rgb(200, 250, 177);
+			border-right: 1px solid rgb(200, 250, 177);
+			border-left: 1px solid rgb(200, 250, 177);
+		}
+
+		.hora{
+			margin: 0;
+			color: rgb(180, 163, 163);
+		}
+
+		.coment-muestra{
+			color: rgb(153, 140, 140);
+		}
+
+		.resp{
+			background-color: rgb(200, 250, 177);
+			color: rgb(100, 114, 89);
+			font-size: 14px;
+		}
+		
+

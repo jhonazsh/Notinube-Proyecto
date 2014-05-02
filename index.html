@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Notinube</title>
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+	<div class="fila">
+		<div class="columna-des12 cabecera">
+			<h2>Notinube</h2>
+		</div>
+	</div>
+
+	<div class="fila">
+		<div class="columna-des7 columna-cel12 columna-tab12 columna-minitab12 contenido-total">
+			<div class="fila">
+				<div class="columna-des12 contenido-cabecera">
+					<div class="nav">
+						<ul class="menusito">
+							<li id="top">Top 10</li>
+							<!--<li>Nacionales</li>-->
+							<li id="mancora">Máncora</li>
+							<li id="trujillo">Trujillo</li>
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+			<div class="fila">
+				<div class="columna-des12 contenido">
+					<div class="fila" id="lista-noticias">
+																																																												
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="columna-des5 columna-cel12 columna-tab12 columna-minitab12" id="info">
+			
+		</div>
+	</div>
+	<div class="fila">	
+		<div class="columna-des12 pie-pagina">
+			<div class="nav nav-footer">
+				<ul>
+					<li>Internacionales</li>
+					<li>Nacionales</li>
+					<li>Máncora</li>
+				</ul>
+			</div>	
+		</div>
+	</div>
+
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="js/vendor/jquery-1.10.1.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/vendor/underscore-min.js"></script>
+	<script src="js/vendor/backbone-min.js"></script>
+
+	<!-- Definiendo Templates //-->
+	<script type="text/template" id="noti">
+		<div class="columna-des12 post" id="post-cuatro">
+			<div class="fila">
+				<div class="columna-des4 post-cab">
+					<img src="<%= imagen %>" alt="" height="188px">
+					<div class="sub-lugar"><%= lugar %></div>
+				</div>
+
+				<div class="columna-des8 post-cont">
+					<div class="fila">
+						<div class="columna-des12 post-cont-cab" id="titulo-puntero1">
+							<%= titulo %>
+							<span class="icon-menu"></span>
+						</div>
+						<div class="columna-des12 post-cont-noti">
+							<div class="fila">
+								<div class="columna-des12 cont-noti">
+									<%= contenido %>
+
+									<div class="sub-cont-noti">	
+										<div class="bloque-sub-noti publicar-redes">
+											Publicar en:
+											<span class="icon-facebook"></span>
+											<span class="icon-twitter"></span>
+											<span class="icon-googleplus"></span>
+										</div>
+										<div class="bloque-sub-noti noti-user"> 							
+											<img src="<%= imagenAutor %>"> <span><%= autor %></span>
+										</div>
+									</div>
+								</div>
+								<div class="columna-des12 cont-botones">
+									<span class="fech">Publicado: 16/03/2014 9:05 am.</span>
+									<button id="leer-mas1">Leer mas</button>
+									<button id="comentar">Comentar</button>					
+								</div>
+							</div>				
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>					
+	</script>
+
+	<script type="text/template" id="noti-defecto">
+		<div class="fila">
+				<div class="columna-des12 mostrar-img">
+					<h3 class="titu-supremo"><%= titulo %></h3>
+					<img src="<%= imagen %>" class="imagen-noti">
+
+				</div>
+				<div class="columna-des12 mostrar-cont-noti">
+				<%= contenido %>
+				</div>
+			</div>
+	</script>
+
+	<script type="text/template" id="noti-comentario">
+		
+		<div class="columna-des12 post" id="post-cuatro">
+			<div class="fila">
+				<div class="columna-des4 post-cab">
+					<img src="<%= imagen %>" alt="" height="188px">
+					<div class="sub-lugar"><%= lugar %></div>
+				</div>
+
+				<div class="columna-des8 post-cont">
+					<div class="fila">
+						<div class="columna-des12 post-cont-cab" id="titulo-puntero1">
+							<%= titulo %>
+							<span class="icon-menu"></span>
+						</div>
+						<div class="columna-des12 post-cont-noti">
+							<div class="fila">
+								<div class="columna-des12 cont-noti">
+									<%= contenido %> 
+									<div class="sub-cont-noti">	
+										<div class="bloque-sub-noti publicar-redes">
+											Publicar en:
+											<span class="icon-facebook"></span>
+											<span class="icon-twitter"></span>
+											<span class="icon-googleplus"></span>
+										</div>
+										<div class="bloque-sub-noti noti-user"> 							
+											<img src="<%= imagenAutor %>"> <span><%= autor %></span>
+										</div>
+									</div>
+								</div>
+								<div class="columna-des12 cont-botones">
+									<span class="fech">Publicado: 16/03/2014 9:05 am.</span>
+									<button id="leer-mas1">Leer mas</button>
+													
+								</div>
+							</div>				
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="fila">
+				<div class="columna-des12" id="coment-text">
+					
+						<div class="grupo-form">
+							<label class="labeled">
+								<div class="bloque-sub-noti noti-user"> 							
+									<img src="<%= imagenAutor %>"> 
+									<small><%= autor %></small>
+								</div>
+							</label>
+							<textarea value=""  id="contenido" rows="4"></textarea>
+						</div>
+
+						<div class="grupo-form">
+						  	<a href="#yendo-comentario"><input type="button" value="Enviar" id="registrar"></a>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="fila">
+				<div class="columna-des12 resp">
+					<div class="fila">
+						<div class="columna-des2">
+							&nbsp;&nbsp;<span class="icon-bubbles"></span>&nbsp;&nbsp;Respuestas (<span id="contador-noticias">0</span>)
+						</div>
+						<div class="columna-des10">
+							
+						</div>
+					</div>	
+				</div>
+			</div>
+			<div class="fila" id="comentando">
+				
+			</div>
+			
+	</script>
+	<script type="text/template" id="comentarios-plus">
+
+		<div class="columna-des12" id="com">
+			<div class="fila">
+				<div class="columna-des2">
+					
+						<div class="bloque-sub-noti noti-user usuario" > 							
+							<img src="img/sandy.jpg"> 
+							<small>Sandy Castillo</small>
+						</div>
+					
+				</div>
+				<div class="columna-des10">
+					<p class="hora" id="yendo-comentario"><small><%= tiempo %></small></p>
+					<span class="coment-muestra"><%= comentario %><span>
+				</div>
+			</div>
+			
+		</div>	
+
+	</script>
+	<!--// Fin de Definición de Templates -->
+
+	<script src="js/servidor.js"></script>
+	<script src="js/backbone/modelos.js"></script>
+	<script src="js/backbone/colecciones.js"></script>
+	<script src="js/backbone/vistas.js"></script>
+	
+</body>
+</html>

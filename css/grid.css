@@ -1,0 +1,92 @@
+body{
+	margin: 0;
+	font-family: Myriad Pro Light;
+}
+
+.fila{
+	width: 100%;
+}
+
+.columna-des1,
+.columna-des2,
+.columna-des3,
+.columna-des4,
+.columna-des5,
+.columna-des6,
+.columna-des7,
+.columna-des8,
+.columna-des9,
+.columna-des10,
+.columna-des11,
+.columna-des12{
+	float: left;
+	box-sizing: border-box;
+	padding: 0.741%;
+}
+
+
+.columna-des1{ width: 8.333333%; }
+.columna-des2{ width: 16.6666662%; }
+.columna-des3{ width: 25%; }
+.columna-des4{ width: 33.333333%; }
+.columna-des5{ width: 41.6666667%; }
+.columna-des6{ width: 50%; }
+.columna-des7{ width: 58.333333%; }
+.columna-des8{ width: 66.6666667%; }
+.columna-des9{ width: 75%; }
+.columna-des10{ width: 83.333333%; }
+.columna-des11{ width: 91.6666667%; }
+.columna-des12{ width: 100%; }
+
+
+.contenedor{
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+@media screen and (min-width: 780px) and (max-width: 1024px){
+	.columna-tab1{ width: 8.333333%; }
+	.columna-tab2{ width: 16.6666662%; }
+	.columna-tab3{ width: 25%; }
+	.columna-tab4{ width: 33.333333%; }
+	.columna-tab5{ width: 41.6666667%; }
+	.columna-tab6{ width: 50%; }
+	.columna-tab7{ width: 58.333333%; }
+	.columna-tab8{ width: 66.6666667%; }
+	.columna-tab9{ width: 75%; }
+	.columna-tab10{ width: 83.333333%; }
+	.columna-tab11{ width: 91.6666667%; }
+	.columna-tab12{ width: 100%; }
+}
+
+@media screen and (min-width: 480px) and (max-width: 780px){
+	.columna-minitab1{ width: 8.333333%; }
+	.columna-minitab2{ width: 16.6666662%; }
+	.columna-minitab3{ width: 25%; }
+	.columna-minitab4{ width: 33.333333%; }
+	.columna-minitab5{ width: 41.6666667%; }
+	.columna-minitab6{ width: 50%; }
+	.columna-minitab7{ width: 58.333333%; }
+	.columna-minitab8{ width: 66.6666667%; }
+	.columna-minitab9{ width: 75%; }
+	.columna-minitab10{ width: 83.333333%; }
+	.columna-minitab11{ width: 91.6666667%; }
+	.columna-minitab12{ width: 100%; }
+}
+
+@media screen and (max-width: 480px){
+	.columna-cel1{ width: 8.333333%; }
+	.columna-cel2{ width: 16.6666662%; }
+	.columna-cel3{ width: 25%; }
+	.columna-cel4{ width: 33.333333%; }
+	.columna-cel5{ width: 41.6666667%; }
+	.columna-cel6{ width: 50%; }
+	.columna-cel7{ width: 58.333333%; }
+	.columna-cel8{ width: 66.6666667%; }
+	.columna-cel9{ width: 75%; }
+	.columna-cel10{ width: 83.333333%; }
+	.columna-cel11{ width: 91.6666667%; }
+	.columna-cel12{ width: 100%; }
+}
+
