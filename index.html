@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
 	<title>Notinube</title>
 	<link rel="stylesheet" href="css/grid.css">
 	<link rel="stylesheet" href="css/estilos.css">
@@ -64,12 +65,12 @@
 	<script type="text/template" id="noti">
 		<div class="columna-des12 post" id="post-cuatro">
 			<div class="fila">
-				<div class="columna-des4 post-cab">
+				<!--<div class="columna-des4 columna-cel6 post-cab">
 					<img src="<%= imagen %>" alt="" height="188px">
 					<div class="sub-lugar"><%= lugar %></div>
-				</div>
+				</div>-->
 
-				<div class="columna-des8 post-cont">
+				<div class="columna-des12 post-cont">
 					<div class="fila">
 						<div class="columna-des12 post-cont-cab" id="titulo-puntero1">
 							<%= titulo %>
@@ -94,7 +95,7 @@
 								</div>
 								<div class="columna-des12 cont-botones">
 									<span class="fech">Publicado: 16/03/2014 9:05 am.</span>
-									<button id="leer-mas1">Leer mas</button>
+									<a href="#info"><button id="leer-mas1">Leer mas</button></a>
 									<button id="comentar">Comentar</button>					
 								</div>
 							</div>				
@@ -108,12 +109,12 @@
 
 	<script type="text/template" id="noti-defecto">
 		<div class="fila">
-				<div class="columna-des12 mostrar-img">
+				<div class="columna-des12 columna-tab12 columna-minitab12 columna-cel12 mostrar-img">
 					<h3 class="titu-supremo"><%= titulo %></h3>
 					<img src="<%= imagen %>" class="imagen-noti">
 
 				</div>
-				<div class="columna-des12 mostrar-cont-noti">
+				<div class="columna-des12 columna-tab12 columna-minitab12 columna-cel12 mostrar-cont-noti">
 				<%= contenido %>
 				</div>
 			</div>
@@ -123,12 +124,12 @@
 		
 		<div class="columna-des12 post" id="post-cuatro">
 			<div class="fila">
-				<div class="columna-des4 post-cab">
+				<!--<div class="columna-des4 post-cab">
 					<img src="<%= imagen %>" alt="" height="188px">
 					<div class="sub-lugar"><%= lugar %></div>
-				</div>
+				</div>-->
 
-				<div class="columna-des8 post-cont">
+				<div class="columna-des12 post-cont">
 					<div class="fila">
 						<div class="columna-des12 post-cont-cab" id="titulo-puntero1">
 							<%= titulo %>
@@ -152,7 +153,7 @@
 								</div>
 								<div class="columna-des12 cont-botones">
 									<span class="fech">Publicado: 16/03/2014 9:05 am.</span>
-									<button id="leer-mas1">Leer mas</button>
+									<a href="#info"><button id="leer-mas1">Leer mas</button></a>
 													
 								</div>
 							</div>				

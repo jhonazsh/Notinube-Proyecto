@@ -1,7 +1,7 @@
 
 
 ////////////////////
-var info = $('#info').offset();
+/*var info = $('#info').offset();
 
 $(window).on('scroll', function(){
 	var scrollBaja = $(this).scrollTop();
@@ -16,7 +16,7 @@ $(window).on('scroll', function(){
 		$('#info').removeClass('info');
 	}
 });
-
+*/
 ////////////////////
 
 

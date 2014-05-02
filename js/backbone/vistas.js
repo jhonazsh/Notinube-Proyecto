@@ -56,7 +56,7 @@
 			render: function(){
 				this.$el.html(this.template(this.model.toJSON()));
 
-				$(window).on('scroll', dale);
+				/*$(window).on('scroll', dale);
 
 				
 
@@ -78,7 +78,7 @@
 						//$(window).off();
 					}
 					
-				}
+				}*/
 			}
 		});
 
@@ -96,7 +96,7 @@
 				console.log(this.model.toJSON());
 				this.$el.html(this.template(this.model.toJSON()));
 
-				$(window).on('scroll', dale);
+				/*$(window).on('scroll', dale);
 
 				
 
@@ -118,7 +118,7 @@
 						//$(window).off();
 					}
 					
-				}
+				}*/
 			}
 		});
 
