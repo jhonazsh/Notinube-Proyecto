@@ -1,10 +1,11 @@
 body{
 	margin: 0;
-	font-family: Calibri;
+	font-family: "Helvetica Neue","Segoe UI",Segoe,Helvetica,Arial,"Lucida Grande",sans-serif;
 }
 
 .fila{
 	width: 100%;
+	overflow: hidden;
 }
 
 .columna-des1,
@@ -58,6 +59,7 @@ body{
 	.columna-tab10{ width: 83.333333%; }
 	.columna-tab11{ width: 91.6666667%; }
 	.columna-tab12{ width: 100%; }
+
 }
 
 @media screen and (min-width: 480px) and (max-width: 780px){
@@ -73,6 +75,7 @@ body{
 	.columna-minitab10{ width: 83.333333%; }
 	.columna-minitab11{ width: 91.6666667%; }
 	.columna-minitab12{ width: 100%; }
+	.offset-col{display: none}
 }
 
 @media screen and (max-width: 480px){
@@ -88,5 +91,6 @@ body{
 	.columna-cel10{ width: 83.333333%; }
 	.columna-cel11{ width: 91.6666667%; }
 	.columna-cel12{ width: 100%; }
+	.offset-col{display: none}
 }
 

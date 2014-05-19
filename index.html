@@ -17,12 +17,12 @@
 	</div>
 
 	<div class="fila">
-		<div class="columna-des7 columna-cel12 columna-tab12 columna-minitab12 contenido-total">
+		<div class="columna-des7 columna-cel12 columna-tab7 columna-minitab12 contenido-total">
 			<div class="fila">
 				<div class="columna-des12 contenido-cabecera">
 					<div class="nav">
 						<ul class="menusito">
-							<li id="top">Top 10</li>
+							<a href="index.html"><li id="top">Top 10</li></a>
 							<!--<li>Nacionales</li>-->
 							<li id="mancora">Máncora</li>
 							<li id="trujillo">Trujillo</li>
@@ -39,7 +39,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="columna-des5 columna-cel12 columna-tab12 columna-minitab12" id="info">
+		<div class="columna-des5 columna-cel12 columna-tab5 columna-minitab12 offset-col" id="info">
 			
 		</div>
 	</div>
@@ -114,6 +114,22 @@
 					<img src="<%= imagen %>" class="imagen-noti">
 
 				</div>
+				<div class="columna-des12 columna-tab12 columna-minitab12 columna-cel12 ">
+					<div class="fila mostrar-imagenes">
+						<div class="columna-des3">
+							<img src="img/examen-admision1.jpg" class="sub-img">
+						</div>
+						<div class="columna-des3">
+							<img src="img/examen-admision2.jpg" class="sub-img">
+						</div>
+						<div class="columna-des3">
+							<img src="img/examen-admision3.jpg" class="sub-img">
+						</div>
+						<div class="columna-des3">
+							<img src="img/examen-admision4.jpg" class="sub-img">
+						</div>					   
+					</div>
+				</div>
 				<div class="columna-des12 columna-tab12 columna-minitab12 columna-cel12 mostrar-cont-noti">
 				<%= contenido %>
 				</div>
@@ -184,10 +200,10 @@
 			<div class="fila">
 				<div class="columna-des12 resp">
 					<div class="fila">
-						<div class="columna-des2">
+						<div class="columna-des3">
 							&nbsp;&nbsp;<span class="icon-bubbles"></span>&nbsp;&nbsp;Respuestas (<span id="contador-noticias">0</span>)
 						</div>
-						<div class="columna-des10">
+						<div class="columna-des9">
 							
 						</div>
 					</div>	
@@ -218,6 +234,89 @@
 			
 		</div>	
 
+	</script>
+
+	<script type="text/template" id="form-registro">
+		<div class="columna-des12 columna-tab12 columna-minitab12 columna-cel12 mostrar-img titu-supremo-reg">
+					<h3>Ingresa:</h3>
+		</div>
+		<div class="columna-des12 contenedor-form">
+			
+			<form class="form-estilo">
+				<div class="columna-des12 g-form" style="color:white">
+					Ingresa a Notinube y publica noticias cortas y rápidas al instante y forma parte de esta gran comunidad.
+				</div>
+
+				<div class="columna-des12 g-form">
+					<label class="label-text g">Usuario:</label>
+			    	<input type="text" placeholder="Usuario" class="inputsito">
+				</div>
+				
+			    <div class="columna-des12 g-form">
+			    	<label class="label-text">Contraseña:</label>
+			    	<input type="password" placeholder="Contraseña" class="inputsito">
+			    </div>
+
+			    <div class="columna-des12 g-form">
+			    	<input type="submit" value="Ingresar" class="bot-registrar">
+			    </div> 
+
+			    <div class="columna-des12 g-form" style="color:white">
+					¿Aún no estás registrado?, <a href="#" style="color:rgb(109, 109, 93)" id="reg">¡Registrate!</a>
+				</div>
+		    </form> 
+		</div>
+	</script>
+
+
+	<script type="text/template" id="form-registro-datos">
+		<div class="columna-des12 columna-tab12 columna-minitab12 columna-cel12 mostrar-img titu-supremo-reg">
+					<h3>Registrate:</h3>
+		</div>
+		<div class="columna-des12 contenedor-form">
+			
+			<form class="form-estilo">
+				<div class="columna-des12 g-form" style="color:white">
+					Ingresa a Notinube y publica noticias cortas y rápidas al instante y forma parte de esta gran comunidad.
+				</div>
+
+
+				<div class="columna-des12 g-form">
+			    	<label class="label-text gn">Nombres:</label>
+			    	<input type="text" placeholder="Nombres" class="inputsito">
+			    </div>
+
+			    <div class="columna-des12 g-form">
+			    	<label class="label-text ga">Apellidos:</label>
+			    	<input type="text" placeholder="Apellidos" class="inputsito">
+			    </div>
+
+			    <div class="columna-des12 g-form">
+			    	<label class="label-text ge">E-Mail:</label>
+			    	<input type="email" placeholder="E-Mail" class="inputsito">
+			    </div>
+
+			    <div class="columna-des12 g-form">
+			    	<label class="label-text g">Usuario:</label>
+			    	<input type="text" placeholder="Usuario" class="inputsito">
+			    </div>
+				
+			    <div class="columna-des12 g-form">
+			    	<label class="label-text">Contraseña:</label>
+			    	<input type="password" placeholder="Contraseña" class="inputsito">
+			    </div>
+
+			    <div class="columna-des12 g-form" style="color:white">
+					Una vez que te registres, has tus publicaciones con responsabilidad!
+				</div>
+
+			    <div class="columna-des12 g-form">
+			    	<input type="submit" value="Registrate" class="bot-registrar">
+			    </div> 
+
+			    
+		    </form> 
+		</div>
 	</script>
 	<!--// Fin de Definición de Templates -->
 

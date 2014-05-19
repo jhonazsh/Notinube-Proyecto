@@ -5,15 +5,17 @@
 			initialize: function(){
 				noticias.on('add', this.agregando);
 				noticias.add(servidorNoticia);
+
+				var vistaFormulario = new VistaFormularioRegistro();
+
 			},
 
 			agregando: function(modelo){
 				var vista1 = new VistaNoticia({model:modelo});
 				$('#lista-noticias').append(vista1.$el);
 				
-				var vistaDefecto = new VistaNoticiaDefecto({model:modelo});
+				//var vistaDefecto = new VistaNoticiaDefecto({model:modelo});
 				
-
 			}
 		});
 
@@ -39,6 +41,7 @@
 
 			comentar: function(){
 				var vistaEnvioComentario = new VistaEnvioComentario({model:this.model});
+				var vista3 = new VistaDetalle({model:this.model});
 
 			}
 		});
@@ -81,6 +84,45 @@
 				}*/
 			}
 		});
+
+		var VistaFormularioRegistroDatos = Backbone.View.extend({
+			el: '#info', 
+
+			template: _.template($('#form-registro-datos').html()),
+
+			initialize: function(){
+				this.render();
+			},
+
+			render: function(){
+				this.$el.html(this.template);
+			}
+		});
+
+		var VistaFormularioRegistro = Backbone.View.extend({
+			el: '#info', 
+
+			template: _.template($('#form-registro').html()),
+
+			events:{
+				'click #reg': 'mostrarRegistro',
+			},
+
+			initialize: function(){
+				this.render();
+			},
+
+			render: function(){
+				this.$el.html(this.template);
+			},
+
+			mostrarRegistro: function(){
+				var vistaFormularioRegistro = new VistaFormularioRegistroDatos();
+
+			}
+		});
+
+		
 
 		//Vista de Detalle de Noticia
 		var VistaDetalle = Backbone.View.extend({

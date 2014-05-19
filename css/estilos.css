@@ -1,21 +1,14 @@
-		
+.columna-des4{
+	overflow-y: auto; 
+}
 
-		.columna-des4{
+.columna-des5{
+	overflow-y: auto;
+}
 
-			
-			
-			overflow-y: auto; 
-		}
-
-		.columna-des5{
-			
-			overflow-y: auto;
-		}
-
-		.cabecera{
-			background-color: rgb(91, 107, 86);
-			
-		}
+.cabecera{
+	background-color: rgb(91, 107, 86);			
+}
 
 		.contenido-cabecera{
 			background-color: rgb(143, 194, 141);
@@ -60,6 +53,7 @@
 		.cont-noti{
 			color: rgb(153, 140, 140);
 			text-align: justify;
+			font-size: 0.9em;
 		}
 
 		.cont-botones{
@@ -72,6 +66,7 @@
 			padding-left: 20px;
 			padding-right: 20px;
 			color: rgb(179, 165, 165);
+			font-size: 0.9em;
 		}
 
 		.cont-botones button:hover{
@@ -149,11 +144,11 @@
 			float: right;
 			margin-top: 3px;
 			margin-right: 2px;
-			font-size: 14px;
+			font-size: 0.8em;
 		}
 
 		b{
-			font-size: 28px;
+			font-size: 1.6em;
 		}
 
 		.sub-lugar{
@@ -277,5 +272,84 @@
 			color: rgb(100, 114, 89);
 			font-size: 14px;
 		}
+
+		.contenedor-form{
+			border: 1px solid rgba(129, 141, 122, 0.88);
+			background-color: rgb(143, 194, 141);
+			padding-top: 2em;
+			padding-bottom: 2em;
+			color: rgb(114, 114, 102);
+			font-size: 1em;
+		}
+
+		.form-estilo{
+			width: 65%;
+			margin-left: auto;
+			margin-right: auto;
+			
+		}
+
+.label-text{
+	background-color: rgb(200, 250, 177);
+	padding: 0.2em 1em 0.3em 1em;
+}
+
+.g-form{
+	margin-bottom: 0.5em;
+	float: right;
+	text-align: justify;
+}
+
+.g{
+	padding: 0.2em 2.57em 0.3em 1em;
+}
+
+.ge{
+	padding: 0.2em 3.2em 0.3em 1em;
+}
+
+.gn{
+	padding: 0.2em 1.922em 0.3em 1em;
+}
+
+.ga{
+	padding: 0.2em 1.98em 0.3em 1em;
+}
+
+.inputsito{
+	height: 25px;
+	padding-left: 0.3em;
+	padding-right: 0.2em;
+}
+
+.bot-registrar{
+	background-color: rgb(245, 245, 145);
+	border: 1px solid rgb(147, 163, 122);
+	padding: 0.2em 1em;
+	width: 100%;
+}
+
+.titu-supremo-reg{
+	margin-bottom: 10px;
+	background-color: rgb(213, 238, 169);
+	color: rgb(107, 100, 100);
+	text-align: center;
+	border-bottom: 3px solid rgb(188, 209, 150);
+}
+
+.titu-supremo-reg h3{
+	margin: 0;
+	
+}
+
+.mostrar-imagenes{
+	background-color: rgb(200, 250, 177);
+}
+
+.sub-img{
+	width: 100%;
+}
+
+
 		
 
